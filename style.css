@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+@keyframes rotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes navLinkFade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo{
+    animation: rotation 4s linear infinite
+}
+.title{
+    font-size: 72px;
+    color: rgb(246, 194, 20);
+    align-items: center;
+}
+.sub-title{
+    font-size: 36px;
+}
+
+
+
+.navbar-container{
+    background-color:rgba(0, 0, 0, 0.15);
+    position: fixed;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-list{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar-container ul li{
+    font-size: 36px;
+    height: 125px;
+    padding: 5% 15px;
+    text-align: center;
+}
+.navbar-container ul li a{
+    text-decoration: none;
+}
+.navbar-logo{
+    position: relative;
+    height: 64px;
+}
+.navbar-container ul li:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.navbar-container ul li a:hover{
+    color: rgb(246, 194, 20);
+}
+
+
+
+.active a{
+    color: rgb(246, 194, 20);
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    height: 4px;
+    width: 30px;
+    background-color: white;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+
+
+.home, .about, .contact-us{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.home{
+    background-image: url(assets/bg1.png);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.home-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-logo{
+    height: 223px;
+    width: 223px;
+}
+
+.about{
+    background-image: url(assets/bg2.png);
+    height: 100vh;
+    display: flex;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-logo{
+    height: 285px;
+    width: 285px;
+}
+.text{
+    text-align: center;
+}
+
+.work{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.worktitle{
+    display: flex;
+    justify-content: center;
+}
+.work-gambar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.kebawah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+}
+.atas, .bawah{
+    display: block;
+}
+.imgtb{
+    width: 400px;
+}
+.kiri, .kanan{
+    display: flex;
+    height: 530px;
+}
+
+
+.contact-us{
+    background-image: url(assets/bg3.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact-us form{
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    width: 651px;
+    height: 500px;
+    padding: 25px;
+}
+.inputf{
+    background-color: rgba(0, 0, 0, 0.25);
+    color: black;
+    height: 50px;
+    font-size: 24px;
+}
+.textbox{
+    height: 176px;
+}
+.contact-us form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.btn{
+    background-color: rgb(246, 194, 20);
+    border-radius: 50px;
+    size: 24px;
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    width: 192px;
+    height: 50px;
+}
+.btns{
+    align-items: center;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 193px;
+}
+.footer-text-title{
+    font-size: 24px;
+}
+.footer-logo{
+    height: 82px;
+}
+.footer-logo-right{
+    height: 40px;
+}
+.footer-bot{
+    display: flex;
+    align-items: center;
+}
+.footer-name{
+    font-size: 36px;
+    color: rgb(246, 194, 20);
+    margin-left: 10px;
+}
+.last-footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    size: 24px;
+}
+
+@media screen and (max-width:375px){
+    .navbar-list{
+        top: 125px;
+        height: 125px;
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+        font-size: 16px;
+    }
+    .navbar-list li{
+        opacity: 0;
+    }
+    .home-title{
+        font-size: 36px;
+    }
+    .home-sub{
+        font-size: 18px;
+    }
+    .home{
+        justify-content: center;
+    }
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .home-logo{
+        height: 142px;
+        width: 142px;
+    }
+    .about-logo{
+        height: 159px;
+        width: 159px;
+    }
+    .title{
+        font-size: 48px;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .burger{
+        display: block;
+    }
+    .work{
+        display: flex;
+        background-color: black;
+        height: 170vh;
+    }
+    .work-gambar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .kiri,.kanan{
+        display: flex;
+        height: 420px;
+    }
+    .atas,.bawah{
+        display: flex;
+        height: 220px;
+    }
+    .kebawah{
+        display: block;
+        height: 440px;
+    }
+    .img{
+        display: flex;
+        width: 311px;
+    }
+    .imgtb{
+        display: flex;
+        height: 208px;
+    }
+    .imglr{
+        display: flex;
+        height: 400px;
+    }
+
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contact-us form{
+        width: 325px;
+        height: 500px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer-text-title{
+        font-size: 16px;
+    }
+    .footer-name{
+        font-size: 16px;
+    }
+    .footer-logo{
+        height: 44px;
+        width: 44px;
+    }
+    .footer-logo-right{
+        width: 182px;
+        height: 19px;
+    }
+    .last-footer{
+        font-size: 12px;
+    }
+}
+.navbar-active{
+    transform: translateY(0%);
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-8px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-8px,-6px);
+}
