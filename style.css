@@ -244,17 +244,20 @@
 
 @media screen and (max-width:375px){
     .navbar-list{
-        top: 125px;
-        height: 125px;
+        top: 213px;
+        height: 300px;
         background-color: rgba(0, 0, 0, 0.15);
         display: flex;
         flex-direction: column;
-        transform: translateY(-200%);
+        transform: translateY(-500%);
         transition: transform 0.5s ease-in;
         font-size: 16px;
     }
     .navbar-list li{
-        opacity: 0;
+        opacity: 1;
+    }
+    .navbar-container ul li:hover{
+        width: 100%;
     }
     .home-title{
         font-size: 36px;
