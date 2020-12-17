@@ -81,18 +81,18 @@
             <div class="title">Contact Us</div>
             <div class="contact-form">
                 <div class="error"></div>
-                <form action="/">
-                    <div>
-                        <input type="text" class="inputf" id="nama" placeholder="Name" required>
+                <form action="/" onsubmit="return validate()" name="formc">
+                    <div id="nm">
+                        <input type="text" class="inputf" id="nama" placeholder="Name">
                     </div>
-                    <div>
-                        <input type="email" class="inputf" id="email" placeholder="Email" required>
+                    <div id="em">
+                        <input type="email" class="inputf" id="email" placeholder="Email">
                     </div>
-                    <div>
-                        <input type="number" class="inputf" id="phone" placeholder="Phone Number" required>
+                    <div id="ph">
+                        <input type="number" class="inputf" id="phone" placeholder="Phone Number">
                     </div>
-                    <div>
-                        <textarea type="text" class="inputf textbox" id="isi" placeholder="Message" required></textarea>
+                    <div id="te">
+                        <textarea type="text" class="inputf textbox" id="isi" placeholder="Message"></textarea>
                     </div>
                     <div class="btns">
                         <button type="submit" class="btn">Submit</button>
@@ -125,6 +125,7 @@
         <script src="js/nav.js"></script>
         <script src="js/js.js"></script>
         <script src="js/drop.js"></script>
+        <script src="js/form.js"></script>
     </div>
 
 </body>
